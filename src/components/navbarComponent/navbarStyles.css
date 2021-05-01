@@ -31,18 +31,19 @@
     font-size: 1rem;
     outline: 0;
     border: 0;
+    border-radius: 18px 18px 0px 0px;
     cursor: pointer;
     padding: 10px;
     background-position: center;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .menuBtn:hover {
-    background: transparent radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
+    background: transparent radial-gradient(circle, transparent 1%, rgba(255, 255, 255, 0.5) 1%) center/15000%;
   }
   
 .menuBtn:active {
-    background-color: #186c9663;
+    background-color: #23749c80;
     background-size: 100%;
     transition: background 0s;
 }

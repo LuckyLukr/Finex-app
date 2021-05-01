@@ -19,6 +19,7 @@
     cursor: url("../../images/playButton.png"), auto;
     color: #de3344;
     font-weight: 400;
+    border-radius: 0px;
 }
 
 .watchBtn:after {
@@ -29,6 +30,10 @@
     background: #de3344;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
+}
+
+.watchBtn:active {
+    background-color: transparent;
 }
 
 .infoButtonGroup {

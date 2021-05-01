@@ -18,6 +18,15 @@
     box-shadow: 14px 15px 7px 0px rgba(155, 155, 155, 0.4);
 }
 
+.course:active {
+    box-shadow: 5px 5px 3px 3px rgba(116, 116, 116, 0.4);
+    background: linear-gradient(90deg, hsla(224, 77%, 55%, 0.3) 0%, hsla(273, 98%, 67%, 0.3) 100%);
+}
+
+.courseText {
+    margin: 1px;
+}
+
 .coursesContainer {
     display: flex;
     justify-content: center;
@@ -38,6 +47,10 @@
 .coursesLink {
     color: rgb(222, 51, 68);
     text-decoration: none;
+}
+
+.menuBtn:active {
+    background-color: transparent;
 }
 
 .coursesLink:after {

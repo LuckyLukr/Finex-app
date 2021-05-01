@@ -1,6 +1,6 @@
 # Getting Started with Finex
 
-This project representing work with plain CSS.
+This project representing work with plain CSS.\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## To Run this Project

@@ -67,8 +67,8 @@ function Courses({ onEmailChange, email, sendEmail }) {
                     return (
                         <a key={e.id} href={e.href} style={{textDecoration: 'none'}}> {/* Local styling */}
                             <div className='course'>
-                                <h3>{e.name}</h3>
-                                <p>{e.number}</p>
+                                <h3 className='courseText'>{e.name}</h3>
+                                <span className='courseText'>{e.number}</span>
                                 <img src={prodImg} alt='production_image' className='courseImg' />
                             </div>
                         </a>
