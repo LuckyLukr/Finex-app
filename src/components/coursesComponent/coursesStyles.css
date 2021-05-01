@@ -1,0 +1,131 @@
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    margin: 1rem;
+    border-radius: 5px;
+    background: linear-gradient(90deg, hsla(224, 77%, 55%, 0.45) 0%, hsla(273, 98%, 67%, 0.45) 100%);
+    color: #f8f8f8;
+    cursor: pointer;
+    box-shadow: 14px 15px 7px 0px rgba(219, 219, 219, 0.4);
+}
+
+.course:hover {
+    background: linear-gradient(90deg, hsla(224, 77%, 55%, 0.9) 0%, hsla(273, 98%, 67%, 0.9) 100%);
+    box-shadow: 14px 15px 7px 0px rgba(155, 155, 155, 0.4);
+}
+
+.coursesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coursesTitleContainer {
+    margin: 5vh 0vw 0vh 3vw;
+}
+
+.coursesTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.coursesLink {
+    color: rgb(222, 51, 68);
+    text-decoration: none;
+}
+
+.coursesLink:after {
+    transform: scaleX(0.1);
+    bottom: 0;
+    left: 0px;
+    height: 1px;
+    background: #de3344;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.coursesLink:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.courseImg {
+    position: absolute;
+    z-index: -1;
+    height: 150px;
+    margin-left: 80px;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 0vw;
+}
+
+.inputContainer {
+    background: white;
+    padding: 15px;
+    border-radius: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module-border-wrap {
+    position: relative;
+    background: linear-gradient(90deg, #3463e4 0%, #b45afd 100%);
+    padding: 3px;
+    border-radius: 20vw;
+}
+
+input {
+    width: 50vw;
+    max-width: 450px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(48, 48, 48);
+    border-radius: 20vw;
+}
+
+input:focus {
+    outline: none;
+}
+
+.inputBtn {
+    width: 165px;
+}
+
+.form {
+    text-align: center;
+}
+
+.formTitle {
+    margin: 50px;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width:699px) {
+    .inputContainer {
+        flex-wrap: wrap;
+    }
+
+    .inputBtn {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .courseImg {
+        margin-left: 0px;
+    }
+}

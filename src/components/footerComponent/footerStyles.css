@@ -1,0 +1,126 @@
+.footerContainer {
+    margin-top: 20vh;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.footerNavLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.footerNavTitle {
+    font-weight: 600;
+}
+
+.footerNavLink {
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    margin-top: 1vh;
+}
+
+.footerNavLink:hover {
+    text-decoration: underline;
+    color: rgb(69, 69, 175);
+}
+
+.footerContact {
+    max-width: 300px;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.subText {
+    color: rgb(138, 138, 138);
+    font-size: 16px;
+}
+
+.subTextContainer {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 170px;
+    margin-top: 2vw;
+}
+
+.socialIcon {
+    background-color: #0158cd;
+    width: 15px;
+    height: 15px;
+}
+
+.iconBg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.fb {
+    mask: url(../../images/facebookLogo.png) no-repeat center / contain;
+    -webkit-mask: url(../../images/facebookLogo.png) no-repeat center / contain;
+}
+
+.tw {
+    mask: url(../../images/twitterLogo.png) no-repeat center / contain;
+    -webkit-mask: url(../../images/twitterLogo.png) no-repeat center / contain;
+}
+
+.pint {
+    mask: url(../../images/pinterestLogo.png) no-repeat center / contain;
+    -webkit-mask: url(../../images/pinterestLogo.png) no-repeat center / contain;
+}
+
+.linked {
+    mask: url(../../images/linkedInLogo.png) no-repeat center / contain;
+    -webkit-mask: url(../../images/linkedInLogo.png) no-repeat center / contain;
+}
+
+.iconBg:hover {
+    background-color: #0158cd;
+}
+
+.iconBg:hover .socialIcon {
+    background-color: #ffffff;
+}
+
+.footerBottomText {
+    min-height: 10vh;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footText {
+    font-size: 14px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+}
+
+.link:hover {
+    text-decoration: underline;
+}

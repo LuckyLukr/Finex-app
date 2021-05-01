@@ -1,0 +1,152 @@
+.navbarContainer {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navMenu {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.menuButtonGroup{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    min-width: 40vw;
+}
+
+.menuBtn {
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    font-size: 1rem;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.menuBtn:hover {
+    background: transparent radial-gradient(circle, transparent 1%, #ffffff 1%) center/15000%;
+  }
+  
+.menuBtn:active {
+    background-color: #186c9663;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.menuBtn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #547ef1 0%, #b964ff 100%);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.menuBtn:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.burgerIcon {
+    width: 25px;
+    margin: 0px 10px;
+}
+
+.titleImg {
+    margin-right: 1rem;
+}
+
+.userMenu {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.userButtonGroup {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #bebebe;
+}
+
+.icon {
+    width: 12px;
+    margin: 0px 10px;
+}
+
+.applyBtn {
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #3463e4 0%, #b45afd 100%);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 4vw;
+    background-position: center;
+    transition: 0.2s;
+}
+
+.applyBtn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: #ffffff7e;
+    border-radius: 4vw;
+    transform-origin: bottom left;
+    transition: transform 0.1s ease-in-out;
+}
+
+.applyBtn:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.applyBtn:active {
+    background: #000000;
+    transform: scale(0.8);
+}
+
+@media screen and (max-width:1190px) {
+    .menuButtonGroup {
+        min-width: 0px;
+    }
+}
+
+@media screen and (max-width:699px) {
+    .userMenu {
+        flex-direction: column-reverse;
+    }
+
+    .navbarContainer {
+        align-items: flex-start;
+    }
+}

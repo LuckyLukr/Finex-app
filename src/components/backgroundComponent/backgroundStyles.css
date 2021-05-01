@@ -1,0 +1,51 @@
+.background {
+    position: absolute;
+    opacity: 0.3;
+}
+
+.backgroundContainer {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.mainBg {
+    margin-top: -7vh;
+    margin-left: 56vw;
+    width: 80vw;
+}
+
+.footerBg {
+    background-image: url('../../images/footerBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.15;
+}
+
+.lineBg {
+    margin-top: -10vh;
+    margin-left: 55vw;
+    width: 78vw;
+}
+
+.pinkBigBg {
+    margin-top: 10vh;
+    margin-left: 50vw;
+}
+
+.pinkMediumBg {
+    margin-top: 50vh;
+    margin-left: 40vw;
+}
+
+.pinkSmallBg {
+    margin-top: 62vh;
+    margin-left: 28vw;
+}
