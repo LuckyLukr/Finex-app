@@ -54,7 +54,7 @@
 }
 
 .coursesLink:after {
-    transform: scaleX(0.1);
+    transform: scaleX(0);
     bottom: 0;
     left: 0px;
     height: 1px;

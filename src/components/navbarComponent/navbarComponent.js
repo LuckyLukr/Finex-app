@@ -18,17 +18,20 @@ function Navbar( {onOpen} ) {
     return (
         <div className='navbarContainer'>
             <div className='navMenu' >
-                <img src={logo} alt='logo' className='logoImg' />
+                 { !isSmallScreen && <img src={logo} alt='logo' className='logoImg' /> }
 
                 <div className='menuButtonGroup'>
-                    <img src={title} alt='title' className='titleImg' />
                     { 
                     isSmallScreen ? 
+                    <>
                         <button className='menuBtn' onClick={()=> onOpen()}>
                             <img src={burger} alt='menu' className='burgerIcon' />
                         </button>
+                        <img src={title} alt='title' className='titleImg' />
+                    </>
                     :
                     <>
+                        <img src={title} alt='title' className='titleImg' />
                         <button className='menuBtn'>
                             Home
                         </button>
